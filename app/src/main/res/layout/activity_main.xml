@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:background="@color/black"
+        app:elevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+             <com.google.android.material.imageview.ShapeableImageView
+                 android:id="@+id/iv_profile"
+                 app:shapeAppearanceOverlay="@style/circle"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/user2"
+                 android:layout_width="30dp"
+                 android:layout_height="30dp">
+             </com.google.android.material.imageview.ShapeableImageView>
+              <TextView
+                  android:text="Chats"
+                  android:textColor="#ffffff"
+                  android:gravity="center_horizontal"
+                  android:textSize="20sp"
+                  android:textStyle="bold"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content">
+              </TextView>
+                <ImageView
+                    android:src="@mipmap/outline_open_in_new_white_24"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </ImageView>
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <EditText
+                android:background="@drawable/shapeborder"
+                android:paddingLeft="10dp"
+                android:textColorHint="#90ffffff"
+                android:hint="Search"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </EditText>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

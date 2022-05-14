@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <FrameLayout
+          android:layout_width="55dp"
+          android:layout_height="55dp">
+          <com.google.android.material.imageview.ShapeableImageView
+              android:id="@+id/iv_profile"
+              android:src="@drawable/user2"
+              app:shapeAppearanceOverlay="@style/circle"
+              android:scaleType="centerCrop"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+          </com.google.android.material.imageview.ShapeableImageView>
+          <LinearLayout
+              android:gravity="bottom|right"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+              <LinearLayout
+                  android:id="@+id/is_online"
+                  android:background="@drawable/shape_circle_green"
+                  android:orientation="vertical"
+                  android:layout_width="15dp"
+                  android:layout_height="15dp">
+              </LinearLayout>
+          </LinearLayout>
+      </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_fullname"
+                android:text="Jafar Bakhromov"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:text="Jafar has just sent a voice message"
+                android:textColor="#90ffffff"
+                android:layout_marginTop="3dp"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

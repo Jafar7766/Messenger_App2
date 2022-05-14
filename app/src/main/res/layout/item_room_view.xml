@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="55dp"
+            android:layout_height="55dp">
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_profile"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user3"
+                app:shapeAppearanceOverlay="@style/circle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </com.google.android.material.imageview.ShapeableImageView>
+            <LinearLayout
+                android:gravity="bottom|right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/is_online"
+                android:background="@drawable/shape_circle_green"
+                android:orientation="vertical"
+                android:layout_width="15dp"
+                android:layout_height="15dp">
+            </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_fullname"
+            android:textColor="@color/white"
+            android:text="Jafar Bakhromov"
+            android:maxWidth="80dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
